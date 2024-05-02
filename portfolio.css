@@ -146,6 +146,17 @@ nav a:hover {
     padding: 20px;
     margin: 50px auto;
 }
+
+.projects img{
+    backface-visibility: hidden;
+    position: absolute;
+    padding-left: 100px;
+}
+
+.projects img:hover{
+    transform: rotateY(180deg);
+}
+
 .project1 {
     grid-column: auto;
     grid-row: inherit;
