@@ -140,11 +140,11 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 400px 400px 400px 400px;
     gap: 100px 100px;
-    justify-items: center;
+    justify-items: start;
     width: 90%;
     height: 90%;
     padding: 20px;
-    margin: 50px auto;
+    margin: 0 auto;
 }
 
 .projects img{
