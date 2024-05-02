@@ -166,8 +166,14 @@ nav a:hover {
     grid-row: inherit;
 }
 .about-grid h1 {
-    font-size: xx-large;
-    padding-bottom: 1em;
+    font-size: 50pt;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.about-grid h2 {
+    font-size: 40pt;
+    padding-top: 2px;
+    padding-bottom: 10px;
 }
 section {
     background-color: var(--white);
