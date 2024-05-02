@@ -151,10 +151,14 @@ nav a:hover {
     backface-visibility: hidden;
     position: absolute;
     padding-left: 100px;
+    transition: width 2s, height 2s, transform 10s;
+    transition-delay: 10s;
 }
 
 .projects img:hover{
     transform: rotateY(180deg);
+    backface-visibility: hidden;
+    opacity: 0;
 }
 
 .project1 {
