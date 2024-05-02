@@ -118,6 +118,7 @@ nav a:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 400px 400px 400px 400px;
     gap: 100px 100px;
+    justify-items: center;
     width: 90%;
     height: 90%;
     padding: 20px;
@@ -126,22 +127,18 @@ nav a:hover {
 .project1 {
     grid-column: auto;
     grid-row: inherit;
-    border: 5px solid var(--black);
 }
 .project2 {
     grid-column: auto;
     grid-row: inherit;
-    border: 5px solid var(--black);
 }
 .project3 {
     grid-column: auto;
     grid-row: inherit;
-    border: 5px solid var(--black);
 }
 .project4 {
     grid-column: auto;
     grid-row: inherit;
-    border: 5px solid var(--black);
 }
 .projects h1 {
     font-size: xx-large;
