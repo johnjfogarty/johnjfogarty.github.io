@@ -60,8 +60,10 @@ table {
     --white: #fff;
     --black: #000000;
     --lightgray: #d3d3d3;
+    --dimgray: #696969;
 }
 
+/* MAIN PAGE STUFF */
 header {
     position: sticky;
     top: 0;
@@ -71,7 +73,7 @@ header {
     padding: 5px 0;
 }
 body {
-    background-color: var(--white);
+    background-color: var(--lightgray);
     font-family: var(--body-font);
 }
 .page-container {
@@ -79,7 +81,7 @@ body {
     min-height: 100vh;
 }
 .content-wrap {
-    padding-bottom: 2.5rem;
+    padding-bottom: 4rem;
 }
 footer {
     position: absolute;
@@ -90,6 +92,9 @@ footer {
     color: var(--white);
     text-align: center;
 }
+/* END MAIN STUFF */
+
+/* NAVIGATION BAR */
 nav {
     background-color: var(--black);
     text-align: center;
@@ -103,16 +108,33 @@ nav a {
     border-radius: 0px;
 }
 nav a:hover {
-    background-color: var(--white);
+    background-color: var(--lightgray);
     color: var(--black);
 }
+/* END NAVIGATION */
+
+/* PROJECTS */
 .container {
     width: 90%;
     height: 90%;
-    padding: 20px;
-    margin: 50px auto;
+    padding: auto;
+    margin: auto;
     border-radius: none;
 }
+.container section {
+    max-width: 600px;
+    margin: 50px auto;
+    margin-top: 50px;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+    font-size: 50pt;
+    font-weight: bold;
+    text-align: center;
+}
+
 .projects {
     display: grid;
     grid-template-columns: 1fr;
@@ -141,22 +163,33 @@ nav a:hover {
     grid-row: inherit;
 }
 .projects h1 {
-    font-size: xx-large;
-    padding: 10px 10px;
+    color: var(--black);
+    font-size: 90px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    text-align: justify;
 }
+/* END PROJECTS */
+
+/* HOME PAGE */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: auto;
     gap: 100px 100px;
     width: 90%;
     height: 90%;
     padding: 20px;
     margin: 50px auto;
+    min-width: none;
+    justify-content: center;
 }
 .about1 {
     grid-column: auto;
     grid-row: inherit;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 .about2 {
     grid-column: auto;
@@ -166,12 +199,19 @@ nav a:hover {
     font-size: 50pt;
     font-weight: bold;
     padding-top: 10px;
+    text-align: left;
 }
 .about-grid h2 {
     font-size: 40pt;
-    padding-top: 2px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
 }
+.about-grid p {
+    padding-bottom: 15px;
+    font-size: 14pt;
+}
+/* END HOME PAGE */
+
 section {
     background-color: var(--white);
     max-width: 800px;
@@ -180,80 +220,113 @@ section {
     border-radius: none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.projects h1 {
-    color: var(--black);
-    font-size: 90px;
-    padding-bottom: 20px;
-    text-decoration: none;
-    text-align: justify;
-}
-.container h1 {
-    color: var(--black);
-    font-size: 90px;
-    padding-bottom: 0;
-    text-decoration: none;
-    text-align: left;
-}
-h2 {
-    color: var(--black);
-}
-a {
-    color: var(--black)
-    text-decoration: none;
-}
 
 /* FORM STYLES */
-
-.form {
-    text-align: left;
-    width: 100%;
+.form section {
+    max-width: 600px;
     margin: 20px auto;
-    background-color: var(--black);
-    border-radius: none;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
-
-.form h1{
-    font-size: 3rem;
-    font-family: var(--body-font);
-    text-align: center;
-    color: var(--white);
-    padding: 5px;
-    margin-bottom: 10px;
-}
-
-.form label {
-    display: block;
-    margin-bottom: 8px;
-    color: var(--white);
-    font-size: 1.5rem;
-}
-
-.form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
 .form button {
     background-color: var(--black);
     color: var(--white);
-    padding: 5px 30px;
+    padding: 10px 10px;
     border: none;
     cursor: pointer;
-    border-radius: none;
-    font-size: 2rem;
-    margin: 0 auto;
+    font-size: 15pt;
+    margin: auto;
+    margin-top: 20px;
     font-family: var(--nav-font);
-    font-weight: bold;
 }
-
 .form button:hover{
-    background-color: var(--white);
+    background-color: var(--lightgray);
     color: var(--black);
 }
 .contact-form{
     width:95%;
 }
+.form h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    font-weight: bold;
+    color: var(--black);
+    text-align: center;
+}
+.form h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    font-weight: bold;
+    color: var(--dimgray);
+}
+.form ul {
+    list-style: none;
+    padding: 0;
+}
+.form li {
+    margin-bottom: 8px;
+}
+/* END FORM */
+
+/* RESUME */
+.resume section {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.resume h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    font-weight: bold;
+    color: var(--black);
+    text-align: center;
+}
+.resume h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    font-weight: bold;
+    color: var(--dimgray);
+}
+.resume h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    color: var(--dimgray);
+}
+.resume h4 {
+    display: block;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    font-weight: bold;
+    text-align: center;
+}
+.resume ul {
+    list-style: none;
+    padding: 0;
+}
+.resume li {
+    margin-bottom: 8px;
+}
+/* END RESUME */
+
+/* ANIMATION */
+
+/* PHONE SCREEN CHANGES */
 @media only screen and (min-width:800px) {
     nav {
         background-color: var(--black);
@@ -280,7 +353,7 @@ a {
     .about-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 400px;
+        grid-template-rows: auto;
         gap: 20px auto;
         width: 90%;
         height: 90%;
@@ -288,3 +361,4 @@ a {
         margin: 50px auto;
     }
 }
+/* END PHONE SCREEN CHANGES */
